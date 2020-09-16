@@ -1,14 +1,13 @@
 import React from 'react';
-import dummyData from '../dummyData';
+// import dummyData from '../dummyData';
 
-function Project(){
-    const {data} = dummyData;
+function Project({data, x}){
 
     return (
         <>
             {data.map(project => 
-                <div key={project.id} className='project'>
-                    <div className='projectDetails-container'>
+                <div key={project.id} className='project-slide' style={{transform: `translateX(${10 + x*100}%)`}}>
+                    <div className='project-details'>
                         <h2>{project.name}</h2>
                         <p>{project.description}</p>
                         <div className='project-links'>
@@ -16,7 +15,7 @@ function Project(){
                         <a href={project.code}>CODE</a>
                         </div>
                     </div>
-                    <div className='project-screen'>
+                    <div className='project-image'>
                         <img src={project.img} alt={project.name + ' photo'}/>
                     </div>
 

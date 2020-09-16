@@ -1,4 +1,5 @@
 .skills-content{
+    height: 100vh;
     text-align: center;
     display:  flex;
     justify-content: space-between ;
@@ -10,27 +11,26 @@
 .skills-left{
     writing-mode: vertical-rl;
     transform: rotate(180deg);
-    font-size: 18rem;
+    font-size: 17rem;
     font-weight: 800;
     color: $primary-grey;
 
 }
 .skills-right{
-    max-height: 80%;
     color: $primary-light;
     text-align: right;
     font-weight: 800;
-    font-size: 7.5rem;
-    padding: 3rem;
-    transform: perspective(100rem) rotateY(-45deg);
-    border-right: .3rem solid $primary-yellow;
+    font-size: 6.5rem;
+    letter-spacing: .5rem;
+    transform: perspective(80rem) rotateY(-45deg) translateX(-2rem);
+    // border-right: .3rem solid $primary-yellow;
 
     h2{
         margin-bottom: 1rem;
     }
 
     h2:hover{
-        transform: scale(1.1) translate(-2rem);
+        transform: scale(1.2) translate(-3rem);
         color: $secondary-dark;
         text-shadow: -1px -1px 0 $primary-light, 1px -1px 0 $primary-light, -1px 1px 0 $primary-light, 1px 1px 0 $primary-light;
     }
