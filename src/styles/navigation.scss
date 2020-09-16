@@ -1,0 +1,105 @@
+.navbar {
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    z-index: 1;
+    background-color: $primary-dark;
+    color: $primary-light;
+    padding: 1.16rem 3.5rem;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    transition: .3s ease-out;
+
+    h1{
+        font-size: 1.2rem;
+    }
+    strong{
+        font-weight: 600;
+    }
+    span{
+        color: $primary-yellow;
+    }
+    a{
+        text-align: center;
+        text-decoration: none;
+        color: $primary-light;
+        font-weight: 500;
+    }
+    a:hover{
+        color: $primary-yellow;
+        font-weight: 600;
+    }
+}
+.navbar:hover{
+    padding: 2rem 3.5rem;
+    transition: .3s ease-out;
+}
+
+.menu{
+  height: 0%;
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: .2rem;
+  z-index: 1; 
+  background-color: $primary-dark;
+  overflow-y: hidden;
+  transition: 0.5s ease-out;
+  text-align: center;
+
+  .closeMenu{
+      font-size: 4rem;
+      cursor: pointer;
+  }
+.closeMenu:hover{
+    color: $primary-yellow;
+    font-weight: 600;
+}
+
+  .menu-content {
+      position: relative;
+      width: 100%;
+      top: 20%;
+      text-align: center;
+      display: flex;
+      flex-direction: column;
+
+      a{
+          color: $primary-light;
+          text-decoration: none;
+          font-size: 8rem;
+          font-weight: 600;
+          margin: 1rem;
+          transition: 0.3s;
+          position: relative;
+      }
+      a::before, a::after{
+        content: '';
+        position: absolute;
+        width: 0%;
+        height: 1rem;
+        top: 50%;
+        z-index: -1;
+        
+     }
+      a::before {
+        left: -.1rem;
+      }
+      a::after {
+        right: -.1rem;
+        background: $primary-yellow;
+        transition: width 0.6s cubic-bezier(0.22, 0.61, 0.36, 1);
+      }
+      a:hover:before {
+        background: $primary-yellow;
+        width: 100%;
+        transition: width 0.6s cubic-bezier(0.22, 0.61, 0.36, 1);
+      }
+      a:hover:after {
+        background: transparent;
+        width: 102%;
+        transition: 0s;
+      }
+}
+}

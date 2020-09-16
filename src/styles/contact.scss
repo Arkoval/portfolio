@@ -1,0 +1,66 @@
+.contact{
+    height: 100vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 2rem;
+    position: relative;
+
+    .contact-right{
+        width: 100%;
+        
+        
+        h1{
+            font-size: 8rem;
+            font-weight: 700;
+            position: absolute;
+            top: 15%;
+            left: 0;
+
+        }
+        h1::after{
+            content: '';
+            width: 72%;
+            height: 8rem;
+            position: absolute;
+            top: 5%;
+            left: .5rem;
+            border-bottom: .5rem solid $primary-yellow;
+            color: red;
+        }
+        div{
+            margin: 1rem;
+            font-size: 2rem;
+            font-weight: 600;
+        }
+        
+    }
+    
+    .contact-form{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+    }
+    label{
+        font-size: 1.2rem;
+        font-weight: 500;
+    }
+    input, textarea{
+        margin: 1rem 0;
+        font-size: 1.25rem;
+        background-color: $primary-dark;
+        border: none;
+        
+    }
+    input:focus ,textarea:focus{
+        box-shadow: 0 0 10px 1px $primary-grey inset;
+    }
+
+    input{
+        padding: 1.5rem 0;
+    }
+    textarea{
+        padding: 3rem 0;
+        max-width: 50vw;
+    }
+}
