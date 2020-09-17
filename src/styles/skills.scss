@@ -17,13 +17,18 @@
 
 }
 .skills-right{
+    width: 80vw;
     color: $primary-light;
+    height: 80%;
+    border: 1px solid red;
+    overflow-y: scroll;
     text-align: right;
     font-weight: 800;
     font-size: 6.5rem;
     letter-spacing: .5rem;
     transform: perspective(80rem) rotateY(-45deg) translateX(-2rem);
     // border-right: .3rem solid $primary-yellow;
+
 
     h2{
         margin-bottom: 1rem;
@@ -33,5 +38,32 @@
         transform: scale(1.2) translate(-3rem);
         color: $secondary-dark;
         text-shadow: -1px -1px 0 $primary-light, 1px -1px 0 $primary-light, -1px 1px 0 $primary-light, 1px 1px 0 $primary-light;
+    }
+}
+
+.preskills-content{
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    transform: translateX(-7%);
+
+    .preskills-left, .preskills-right{
+        font-weight: 700;
+    }
+    .preskills-left{
+        font-size: 20rem;
+    }
+    .preskills-right{
+        font-size: 20rem;
+        display: flex;
+        align-items: center;
+        transform: translateX(21%);
+        
+        .square{
+            width: 29.5rem;
+            height: 16rem;
+            background-color: $primary-yellow;
+        }
     }
 }

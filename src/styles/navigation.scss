@@ -49,12 +49,17 @@
   text-align: center;
 
   .closeMenu{
-      font-size: 4rem;
+    margin-top: 2rem;
+      font-size: 5rem;
+      transform: scaleX(1.5);
+      writing-mode: vertical-rl;
       cursor: pointer;
+      transition: 0.5s;
   }
 .closeMenu:hover{
     color: $primary-yellow;
-    font-weight: 600;
+    transform: scale(1.5);
+    transition: 0.5s;
 }
 
   .menu-content {

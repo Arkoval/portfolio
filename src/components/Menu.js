@@ -8,7 +8,7 @@ function Menu() {
 
     return(
         <div className='menu'>
-            <a onClick={closeMenu} className='closeMenu'>&uarr;</a>
+            <a onClick={closeMenu} className='closeMenu'>&#10094;</a>
             <div className="menu-content">
                 <ul>
                     <li><a href="#">Home</a></li>

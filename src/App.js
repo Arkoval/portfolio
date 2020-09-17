@@ -6,6 +6,7 @@ import SkillsPage from './components/SkillsPage';
 import ProjectsPage from './components/ProjectsPage';
 import Menu from './components/Menu';
 import Contact from './components/Contact';
+import PreSkillsPage from './components/PreSkills';
 
 
 function App() {
@@ -14,6 +15,7 @@ function App() {
     <Navbar/>
     <Menu/>
     <HomePage/>
+    <PreSkillsPage/>
     <SkillsPage/>
     <ProjectsPage/>
     <Contact/>

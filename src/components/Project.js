@@ -1,12 +1,16 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 // import dummyData from '../dummyData';
 
-function Project({data, x}){
+function Project({data, active}){
+
+
 
     return (
         <>
-            {data.map(project => 
-                <div key={project.id} className='project-slide' style={{transform: `translateX(${10 + x*100}%)`}}>
+            {data.map((project, i) => {
+                return (
+                    <div key={i} className={`project-slide ${active === i ? 'active' : 'inactive'}`}
+                    style={{transform: `translateX(${-active*100}%)`}}>
                     <div className='project-details'>
                         <h2>{project.name}</h2>
                         <p>{project.description}</p>
@@ -20,6 +24,8 @@ function Project({data, x}){
                     </div>
 
                 </div>
+                )
+            }
                 )}
         </>
     )

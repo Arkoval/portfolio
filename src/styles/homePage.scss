@@ -2,6 +2,12 @@
 .homePage{
     height: 100vh;
     text-align: center;
+    // background: url(../utils/enso.svg) no-repeat center;
+    
+    // .enso{
+    //     fill: $primary-dark;
+    //     animation: enso-animation infinite 10s linear ;
+    // }
     
     .homePage-content{
         position: absolute;
@@ -24,4 +30,12 @@
         display: block;
     }
 
+}
+@keyframes enso-animation {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
 }

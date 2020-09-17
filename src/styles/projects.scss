@@ -26,12 +26,13 @@
     .btn-left, .btn-right{
         position: absolute;
         color: $primary-light;
-        background: none;
+        background: $secondary-dark;
         border: none;
         top: 0;
-        font-size: 4rem;
-        width: 5%;
+        font-size: 5rem;
+        width: 6%;
         height: 80%;
+
     }
     .btn-left{
         left: 0;
@@ -41,6 +42,18 @@
         right: 0;
         
     }
+    .btn-right:hover{
+        transform: scale(1.3) translateX(-.77rem);
+        transition: 0.5s cubic-bezier(0.165, 0.84, 0.44, 1);
+    }
+    .btn-left:hover{
+        transform: scale(1.3) translateX(.77rem);
+        transition: 0.5s cubic-bezier(0.165, 0.84, 0.44, 1);
+    }
+    .btn-right:focus, .btn-left:focus {
+        outline: none;
+        box-shadow: none;
+      }
 }
 .project-slide{
     min-width: 80%;
@@ -48,8 +61,8 @@
     display: flex;
     justify-content: space-around;
     align-items: center;
-    // margin: 0 auto;
-    transition: 0.5s;
+    margin: 0 auto;
+    transition: 0.8s;
     
 
     .project-details{
@@ -88,4 +101,11 @@
         }
         
     }
+}
+.active {
+    margin: 0 10rem;
+}
+.inactive{
+    z-index: -1;
+    opacity: .2;
 }

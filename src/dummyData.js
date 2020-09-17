@@ -23,6 +23,14 @@ export default {
             description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec accumsan ante ac arcu mattis, eu elementum ligula auctor. In mattis ex sed magna venenatis tristique. Cras ac elit est. Maecenas ultrices, dolor nec dapibus posuere, sem urna tincidunt odio, a hendrerit urna diam aliquet ante. Praesent porttitor interdum purus vitae feugiat. In in pellentesque erat. Quisque dictum ligula nec sodales congue. Suspendisse laoreet libero lectus, in malesuada nibh euismod ut. Cras aliquet vel nisi nec p',
             live: 'https://www.google.pl',
             code: 'https://www.google.com'
+        },
+        {
+            id: '4',
+            name: 'Dummy Project4',
+            img: '/images/dummy-photo.jpg',
+            description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec accumsan ante ac arcu mattis, eu elementum ligula auctor. In mattis ex sed magna venenatis tristique. Cras ac elit est. Maecenas ultrices, dolor nec dapibus posuere, sem urna tincidunt odio, a hendrerit urna diam aliquet ante. Praesent porttitor interdum purus vitae feugiat. In in pellentesque erat. Quisque dictum ligula nec sodales congue. Suspendisse laoreet libero lectus, in malesuada nibh euismod ut. Cras aliquet vel nisi nec p',
+            live: 'https://www.google.pl',
+            code: 'https://www.google.com'
         }
     ]
 }

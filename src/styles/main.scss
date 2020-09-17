@@ -14,7 +14,14 @@ body {
     border-bottom: 6rem $primary-dark solid;
     border: 3.5rem $primary-dark solid;
     background-color: $secondary-dark;
-    color: $primary-light
+    color: $primary-light;
+    // filter:hue-rotate(180deg);
 
+  }
 
+  body::-webkit-scrollbar {
+    width: 1rem;
+  }
+  body::-webkit-scrollbar-thumb {
+    background-color: $primary-yellow;
   }

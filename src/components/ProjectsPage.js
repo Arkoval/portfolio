@@ -3,17 +3,19 @@ import Project from './Project';
 import Data from '../dummyData';
 
 function ProjectsPage() {
-    const [x, setX] = useState(0)
-    const currentSlide = useRef(1)
+    const [active, setActive] = useState(0);
     const {data} = Data;
 
     const goLeftHandler = () => { 
-        x === 0 ? setX(-(data.length - 1)) : setX(x + 1);
+        active < 1 ? setActive(data.length -1) : setActive(active - 1);
+        // x < 1 ? setActive(data.length -1) : setActive(x - 1);
+
     }
 
     const goRightHandler = () => {
-        x === -(data.length - 1) ? setX(0) : setX(x - 1);
-        
+        active === data.length -1 ? setActive(0) : setActive(active + 1);
+        // x < data.length - 1 ? setActive(x + 1) : setActive(0);
+           
     }
 
     return (
@@ -23,7 +25,7 @@ function ProjectsPage() {
                 <h1>ects</h1>
             </div> */}
             <div className='projects-slider'>
-            <Project x={x} data={data} currentSlide={currentSlide}/>
+            <Project data={data} active={active}/>
             <button className='btn-left' onClick={goLeftHandler}>&#10094;</button>
             <button className='btn-right' onClick={goRightHandler}>&#10095;</button>
             </div>
