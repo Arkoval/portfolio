@@ -11,10 +11,10 @@
 body {
     font-family: $primary-font;
     font-size: calc(12px + (16 - 12) * ((100vw - 300px) / (1900 - 300)));
-    border-bottom: 6rem $primary-dark solid;
-    border: 3.5rem $primary-dark solid;
-    background-color: $secondary-dark;
-    color: $primary-light;
+    border-bottom: 6rem $primary solid;
+    border: 3.5rem $primary solid;
+    background-color: $secondary;
+    color: $dark;
     // filter:hue-rotate(180deg);
 
   }
@@ -23,5 +23,5 @@ body {
     width: 1rem;
   }
   body::-webkit-scrollbar-thumb {
-    background-color: $primary-yellow;
+    background-color: $primary-color;
   }

@@ -1,5 +1,4 @@
 import React from 'react';
-import {ReactComponent as Enso} from '../utils/enso.svg'
 
 function HomePage() {
 
@@ -12,7 +11,6 @@ function HomePage() {
             <div className='homePage-content'>
                 <h1>Hello, my name is <span>Arek</span> and</h1>
                 <h2>I'm a Front End Developer</h2>
-                <Enso onScroll={scrollHandler} className='enso'/>
             </div>
         </div>
     )

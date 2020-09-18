@@ -1,10 +1,10 @@
 import React from 'react';
 
-function Footer() {
+function BottomMenu() {
 
     return (
-        <footer className='footer'>SCROLL</footer>
+        <a href='#' className='bottom-menu'>TOP</a>
     )
 }
 
-export default Footer;
+export default BottomMenu;

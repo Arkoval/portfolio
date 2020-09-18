@@ -20,10 +20,6 @@ function ProjectsPage() {
 
     return (
         <div className='projects'>
-            {/* <div className='projects-background'>
-                <h1>Proj</h1>
-                <h1>ects</h1>
-            </div> */}
             <div className='projects-slider'>
             <Project data={data} active={active}/>
             <button className='btn-left' onClick={goLeftHandler}>&#10094;</button>

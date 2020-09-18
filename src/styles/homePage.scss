@@ -2,40 +2,31 @@
 .homePage{
     height: 100vh;
     text-align: center;
-    // background: url(../utils/enso.svg) no-repeat center;
-    
-    // .enso{
-    //     fill: $primary-dark;
-    //     animation: enso-animation infinite 10s linear ;
-    // }
-    
+    background: url('../utils/enso-hero.svg') no-repeat fixed left;
+    background-position: fixed;
+    transition: 0.3s ease-out;
+
     .homePage-content{
         position: absolute;
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%, -50%);
+        top: 55%;
+        left: 46%;
+        // transform: translate(0, -50%);
     }
     h1, h2 {
-        font-size: 3.5rem;
-        font-weight: 600;
+        font-size: 4rem;
+        font-weight: 700;
+        
     
         span{
-            color: $primary-yellow;
+            color: $primary-color;
         }
     }
     
     h2{
-        background-color: $primary-grey;
+        background-color: $dark;
+        color: $primary;
         padding: .2rem;
         display: block;
     }
 
-}
-@keyframes enso-animation {
-    0% {
-        transform: rotate(0deg);
-    }
-    100% {
-        transform: rotate(360deg);
-    }
 }

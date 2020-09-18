@@ -1,4 +1,4 @@
-import React, { useEffect, useRef } from 'react';
+import React, { useRef, useEffect } from 'react';
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 
@@ -7,7 +7,8 @@ if (typeof window !== `undefined`) {
   gsap.core.globals("ScrollTrigger", ScrollTrigger)
 }
 
-function PreSkillsPage() {
+function PreProjectsPage() {
+
     let container = useRef(null);
     let left = useRef(null);
     let right = useRef(null);
@@ -15,13 +16,13 @@ function PreSkillsPage() {
     useEffect(() =>{
         console.log(left,right, container)
         gsap.fromTo(left, {
-            x: -500,
-            autoAlpha: 0, 
+            x: -1000,
+            color: 'white',
             transformOrigin: "left center",
         },
          {
-                x:-100,
-                autoAlpha:1,
+                x:30,
+                color:'black',
                 scrollTrigger: {
                     trigger: container,
                     scrub: true,
@@ -31,13 +32,13 @@ function PreSkillsPage() {
                   },
             });
             gsap.fromTo(right, {
-                x: 500,
-                autoAlpha: 0, 
+                x: 1000,
+                color: 'black',
                 transformOrigin: "left center", 
             },
              {
-                    x:70,
-                    autoAlpha:1,
+                    x:-30,
+                    color: 'white',
                     scrollTrigger: {
                         trigger: container,
                         scrub: true,
@@ -45,17 +46,24 @@ function PreSkillsPage() {
                         end: "+=100%"
                       },
                 });
+                gsap.from(container, {
+                    background: '#FCFCFC',
+                    autoAlpha: 0,
+                    scrollTrigger: {
+                        trigger: container,
+                        start: "top top",
+                        end: "+=100%"
+                },
+                    });
     })
 
-    return (
-            <div className='preskills-content' ref={e => {container = e}}>
-                <div ref={e => {left = e}} className='preskills-left'>Ski</div>
-                <div ref={e => {right = e}} className='preskills-right'><div className='square'></div>lls</div>
-                
-            </div>
-        
 
+    return (
+        <div className='preprojects' ref={e => {container = e}}>
+                <h1 ref={e => {left = e}}>Proj</h1>
+                <h1 ref={e => {right = e}}>ects</h1>
+        </div>
     )
 }
 
-export default PreSkillsPage;
+export default PreProjectsPage;

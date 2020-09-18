@@ -11,13 +11,10 @@ function SkillsPage() {
                     <div><h2>JAVASCRIPT ES6+</h2></div>
                     <div><h2>REACT & HOOKS</h2></div>
                     <div><h2>REDUX</h2></div>
+                    <div><h2>REACT ROUTER</h2></div>
+                    <div><h2>GSAP</h2></div>
                     <div><h2>GIT</h2></div>
-                    <div><h2>HTML5</h2></div>
-                    <div><h2>CSS3 / SASS</h2></div>
-                    <div><h2>JAVASCRIPT ES6+</h2></div>
-                    <div><h2>REACT & HOOKS</h2></div>
-                    <div><h2>REDUX</h2></div>
-                    <div><h2>GIT</h2></div>
+                    <div><h2>ADOBE AI / PS / XD</h2></div>
                 </div>
             </div>
         

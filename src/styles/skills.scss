@@ -4,66 +4,85 @@
     display:  flex;
     justify-content: space-between ;
     align-items: center;
-    margin: 0 4rem;
-}
+    // margin: 0 4rem;
 
-
-.skills-left{
-    writing-mode: vertical-rl;
-    transform: rotate(180deg);
-    font-size: 17rem;
-    font-weight: 800;
-    color: $primary-grey;
-
-}
-.skills-right{
-    width: 80vw;
-    color: $primary-light;
-    height: 80%;
-    border: 1px solid red;
-    overflow-y: scroll;
-    text-align: right;
-    font-weight: 800;
-    font-size: 6.5rem;
-    letter-spacing: .5rem;
-    transform: perspective(80rem) rotateY(-45deg) translateX(-2rem);
-    // border-right: .3rem solid $primary-yellow;
-
-
-    h2{
-        margin-bottom: 1rem;
+    .skills-left{
+        writing-mode: vertical-rl;
+        transform: rotate(180deg);
+        font-size: 17rem;
+        font-weight: 800;
+        color: $dark;
+        margin: 0 4rem;
+    
     }
-
-    h2:hover{
-        transform: scale(1.2) translate(-3rem);
-        color: $secondary-dark;
-        text-shadow: -1px -1px 0 $primary-light, 1px -1px 0 $primary-light, -1px 1px 0 $primary-light, 1px 1px 0 $primary-light;
+    .skills-right::before{
+        content: 'SCROLL ME';
+        color: $primary-color;
+        animation: scroll 2s infinite ease-in;
+    }
+    @keyframes scroll {
+        from{
+            color: $secondary;
+        }
+        to{
+            color: $primary-color;
+        }
+    }
+    .skills-right{
+        width: 80vw;
+        margin: 0 4rem;
+        padding: 2rem;
+        color: $dark;
+        height: 60%;
+        overflow-y: scroll;
+        text-align: right;
+        font-weight: 800;
+        font-size: 5rem;
+        transform: perspective(80rem) rotateY(-45deg) translateX(-3rem);
+    
+    
+        h2{
+            margin-bottom: 1rem;
+        }
+    
+        h2:hover{
+            // transform: scale(1.1) translate(-3rem);
+            color: $secondary;
+            text-shadow: -1px -1px 0 $dark, 1px -1px 0 $dark, -1px 1px 0 $dark, 1px 1px 0 $dark;
+        }
+    }
+    
+    .skills-right::-webkit-scrollbar{
+        width: .5rem;
+    }
+    .skills-right::-webkit-scrollbar-thumb{
+        background-color: $primary-color;
     }
 }
+
+
+
 
 .preskills-content{
     height: 100vh;
     display: flex;
     flex-direction: column;
+    justify-content: center;
     align-items: center;
-    transform: translateX(-7%);
+    overflow: hidden;
 
     .preskills-left, .preskills-right{
-        font-weight: 700;
-    }
-    .preskills-left{
-        font-size: 20rem;
+        font-size: 24rem;
+        font-weight: 800;
     }
     .preskills-right{
-        font-size: 20rem;
         display: flex;
         align-items: center;
-        transform: translateX(21%);
         
         .square{
-            width: 29.5rem;
-            height: 16rem;
-            background-color: $primary-yellow;
+            width: 32rem;
+            height: 19rem;
+            background-color: $primary-color;
         }
     }
 }

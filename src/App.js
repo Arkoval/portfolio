@@ -7,6 +7,7 @@ import ProjectsPage from './components/ProjectsPage';
 import Menu from './components/Menu';
 import Contact from './components/Contact';
 import PreSkillsPage from './components/PreSkills';
+import PreProjectsPage from './components/PreProjects';
 
 
 function App() {
@@ -17,6 +18,7 @@ function App() {
     <HomePage/>
     <PreSkillsPage/>
     <SkillsPage/>
+    <PreProjectsPage/>
     <ProjectsPage/>
     <Contact/>
     <Footer/>
