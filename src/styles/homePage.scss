@@ -3,23 +3,29 @@
     height: 100vh;
     text-align: center;
     background: url('../utils/enso-hero.svg') no-repeat fixed left;
-    background-position: fixed;
-    transition: 0.3s ease-out;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-end;
+    overflow: hidden;
+
+    @media screen and (max-width: 1000px){
+        background: url('../utils/enso.svg') no-repeat center;
+        background-size: 150vmax;
+
+        .homePage-content h1, .homePage-content h2{
+            font-size: 3rem;
+        }
+    }
 
     .homePage-content{
-        position: absolute;
-        top: 55%;
-        left: 46%;
-        // transform: translate(0, -50%);
+       margin: 0 1rem;
+
     }
     h1, h2 {
         font-size: 4rem;
         font-weight: 700;
-        
     
-        span{
-            color: $primary-color;
-        }
     }
     
     h2{

@@ -14,7 +14,7 @@ function SkillsPage() {
                     <div><h2>REACT ROUTER</h2></div>
                     <div><h2>GSAP</h2></div>
                     <div><h2>GIT</h2></div>
-                    <div><h2>ADOBE AI / PS / XD</h2></div>
+                    <div><h2>ADOBE</h2></div>
                 </div>
             </div>
         

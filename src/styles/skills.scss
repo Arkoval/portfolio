@@ -6,6 +6,7 @@
     align-items: center;
     // margin: 0 4rem;
 
+
     .skills-left{
         writing-mode: vertical-rl;
         transform: rotate(180deg);
@@ -13,8 +14,19 @@
         font-weight: 800;
         color: $dark;
         margin: 0 4rem;
+
+        @media screen and (max-width: 1440px) {
+            font-size: 13rem    ;
+        }
+
+        @media screen and (max-width: 1160px) {
+            font-size: 10rem;
+            border-left: .5rem solid $primary-color;
+        }
     
     }
+
+
     .skills-right::before{
         content: 'SCROLL ME';
         color: $primary-color;
@@ -28,6 +40,11 @@
             color: $primary-color;
         }
     }
+    @media screen and (max-width: 1160px){
+        .skills-right::before{
+            display: none;
+        }
+    }
     .skills-right{
         width: 80vw;
         margin: 0 4rem;
@@ -39,10 +56,29 @@
         font-weight: 800;
         font-size: 5rem;
         transform: perspective(80rem) rotateY(-45deg) translateX(-3rem);
+
+        
+        @media screen and (max-width: 1160px) {
+                text-align: right;
+                display:flex;
+                flex-direction: column;
+                transform: none;
+                overflow: initial;
+                font-size: 3rem;
+                padding: 0;
+                margin: 0 2rem;
+
+        }
+       
     
     
         h2{
             margin-bottom: 1rem;
+
+            @media screen and (max-width: 1160px) {
+                margin-bottom: .5rem;
+            }
+
         }
     
         h2:hover{
@@ -71,9 +107,17 @@
     align-items: center;
     overflow: hidden;
 
+    @media screen and (max-width: 900px) {
+        display: none;
+    }
+
     .preskills-left, .preskills-right{
         font-size: 24rem;
         font-weight: 800;
+
+        @media screen and (max-width: 1360px) {
+            font-size: 18rem;
+        }
     }
     .preskills-right{
         display: flex;
@@ -83,6 +127,11 @@
             width: 32rem;
             height: 19rem;
             background-color: $primary-color;
+
+            @media screen and (max-width: 1360px) {
+                width: 26rem;
+                height: 14rem;
+            }
         }
     }
 }

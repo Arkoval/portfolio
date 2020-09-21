@@ -21,6 +21,13 @@
         width: 6%;
         height: 80%;
 
+        @media screen and (max-width: 900px) {
+            background: none;
+        
+            
+        }
+    
+
     }
     .btn-left{
         left: 0;
@@ -52,6 +59,11 @@
     margin: 0 auto;
     transition: 0.8s;
     
+    @media screen and (max-width: 600px) {
+        flex-direction: column;
+        justify-content: center;
+    
+    }
 
     .project-details{
         background-color: $primary-color;
@@ -92,6 +104,10 @@
 }
 .active {
     margin: 0 10rem;
+
+    @media screen and (max-width: 954px) {
+        margin: 0 5rem;
+    }
 }
 .inactive{
     z-index: -1;
@@ -111,4 +127,11 @@
         h1:last-child{
             align-self: flex-end;
         }
+
+    @media screen and (max-width: 966px) {
+        font-size: 20rem;
+    }
+    @media screen and (max-width: 740px){
+        display: none;
+    }
 }
