@@ -1,7 +1,7 @@
 import React from 'react';
-import GitHub from '../utils/github.svg';
-import LinkedIn from '../utils/linkedin.svg';
-import Email from '../utils/arroba.svg';
+import { ReactComponent as GitHub } from '../utils/github.svg';
+import {ReactComponent as LinkedIn} from '../utils/linkedin.svg';
+import {ReactComponent as Email} from '../utils/arroba.svg';
 
 function Footer() {
 
