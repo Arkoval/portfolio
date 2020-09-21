@@ -1,5 +1,5 @@
 .contact{
-    height: 80vh;
+    height: 100vh;
     display: flex;
     background: url(../utils/enso-footer.svg) no-repeat right;
     justify-content: space-between;
@@ -11,7 +11,7 @@
 
     }
 
-    .contact-right{
+    .contact-left{
         height: 80%;
         width: 100%;
         margin: 0 1rem;
@@ -39,11 +39,29 @@
             color: red;
         }
         div{
-            margin: 5rem 1rem;
+            margin: 3rem 1rem;
             font-size: 2rem;
             font-weight: 600;
         }
+        .construction-warning{
+            text-align: center;
+            padding: 2rem;
+            background-color: $primary-color;
+            border: 1rem solid $secondary;
+            color: $primary;
+            animation: warning infinite 2s;
+            transition: .5s ease-in-out;
+        }
         
+    }
+    @keyframes warning {
+        from{
+            opacity: 0.2;
+        }
+        to{
+            opacity: 1;
+            transform: scale(1.01);
+        }
     }
     
     .contact-form{
@@ -55,9 +73,10 @@
     label{
         font-size: 1.2rem;
         font-weight: 600;
+        margin: 1rem 0;
     }
     input, textarea{
-        margin: 1rem 0;
+        // margin: 1rem 0;
         font-size: 1.25rem;
         font-weight: 600;
         background-color: $primary;
@@ -66,14 +85,13 @@
     }
     input[type='submit']{
         width: 30%;
-        margin: 0 auto;
-        display: block;
+        margin: 2rem auto;
         color: $primary;
         background-color: $dark;
 
-        @media screen and (max-width: 768px) {
-           margin-bottom: 3rem;
-        }
+        // @media screen and (max-width: 768px) {
+        //    margin-bottom: rem;
+        // }
 
 
     }

@@ -18,7 +18,7 @@ function Project({data, active}){
                         </div>
                     </div>
                     <div className='project-image'>
-                        <img src={project.img} alt={project.name + ' photo'}/>
+                        <img src={require('../utils/dummy-photo.jpg')} alt={project.name + ' photo'}/>
                     </div>
 
                 </div>
