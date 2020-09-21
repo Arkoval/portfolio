@@ -1,4 +1,4 @@
-import React, { useRef, useState } from 'react';
+import React, { useState } from 'react';
 import Project from './Project';
 import Data from '../dummyData';
 
@@ -19,12 +19,12 @@ function ProjectsPage() {
     }
 
     return (
-        <div className='projects'>
+        <div className='projects' id='projects'>
+            <button className='btn-left' onClick={goLeftHandler}>&#10094;</button>
             <div className='projects-slider'>
             <Project data={data} active={active}/>
-            <button className='btn-left' onClick={goLeftHandler}>&#10094;</button>
-            <button className='btn-right' onClick={goRightHandler}>&#10095;</button>
             </div>
+            <button className='btn-right' onClick={goRightHandler}>&#10095;</button>
         </div>
     )
 }

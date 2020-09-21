@@ -1,8 +1,6 @@
-import React, { useEffect } from 'react';
-// import dummyData from '../dummyData';
+import React from 'react';
 
 function Project({data, active}){
-
 
 
     return (

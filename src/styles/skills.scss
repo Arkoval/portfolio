@@ -4,7 +4,6 @@
     display:  flex;
     justify-content: space-between ;
     align-items: center;
-    // margin: 0 4rem;
 
 
     .skills-left{
@@ -22,6 +21,9 @@
         @media screen and (max-width: 1160px) {
             font-size: 10rem;
             border-left: .5rem solid $primary-color;
+        }
+        @media screen and (max-width: 680px) {
+            display: none;
         }
     
     }
@@ -68,6 +70,10 @@
                 padding: 0;
                 margin: 0 2rem;
 
+        }
+        @media screen and (max-width: 680px) {
+            text-align: center;
+            margin: 0 auto;
         }
        
     

@@ -9,7 +9,7 @@ function Navbar() {
     return(
         <nav className='navbar'>
             <h1><span>&lt;</span>Arkadiusz<strong>Kowalski</strong><span>/&gt;</span></h1>
-            <a onClick={openMenu} href='#'>MENU</a>
+            <a onClick={openMenu} href='#home'>MENU</a>
         </nav>
     )
 }

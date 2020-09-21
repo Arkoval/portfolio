@@ -13,7 +13,6 @@ function PreSkillsPage() {
     let right = useRef(null);
 
     useEffect(() =>{
-        console.log(left,right, container)
         gsap.fromTo(left, {
             x: -500,
             autoAlpha: 0, 

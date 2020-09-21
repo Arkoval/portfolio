@@ -48,7 +48,6 @@ body {
     border: 3.5rem $primary solid;
     background-color: $secondary;
     color: $dark;
-    // filter:hue-rotate(180deg);
     @media screen and (max-width: 1024px){
       border: none;
     }

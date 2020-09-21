@@ -14,7 +14,6 @@ function PreProjectsPage() {
     let right = useRef(null);
 
     useEffect(() =>{
-        console.log(left,right, container)
         gsap.fromTo(left, {
             x: -1000,
             color: 'white',

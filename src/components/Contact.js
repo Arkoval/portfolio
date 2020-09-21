@@ -1,4 +1,4 @@
-import React, { useEffect, useRef, useState } from 'react';
+import React, { useState } from 'react';
 
 function Contact(){
     const [name,setName] = useState('');
@@ -9,7 +9,7 @@ function Contact(){
         e.preventDefault();
         console.log(name, email, description)
     }
-    return <div className='contact'>
+    return <div className='contact' id='contact'>
             <div className='contact-right'>
                 <h1>Contact</h1>
                 <div>Portfolio in English</div>

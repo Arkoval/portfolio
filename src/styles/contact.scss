@@ -1,27 +1,36 @@
 .contact{
-    height: 100vh;
+    height: 80vh;
     display: flex;
     background: url(../utils/enso-footer.svg) no-repeat right;
     justify-content: space-between;
     align-items: center;
-    // margin: 0 2rem;
-    position: relative;
+
+    
+    @media screen and (max-width: 768px) {
+        flex-direction: column;
+
+    }
 
     .contact-right{
+        height: 80%;
         width: 100%;
-        
-        
+        margin: 0 1rem;
+    
+    
         h1{
             font-size: 8rem;
             font-weight: 700;
-            position: absolute;
-            top: 15%;
-            left: 0;
+            position: relative;
+            align-self: flex-start;
+
+            @media screen and (max-width:425px) {
+                font-size: 6rem;
+            }
 
         }
         h1::after{
             content: '';
-            width: 72%;
+            width: 40%;
             height: 8rem;
             position: absolute;
             top: 5%;
@@ -30,7 +39,7 @@
             color: red;
         }
         div{
-            margin: 1rem;
+            margin: 5rem 1rem;
             font-size: 2rem;
             font-weight: 600;
         }
@@ -38,6 +47,7 @@
     }
     
     .contact-form{
+        margin: 0 1rem;
         width: 100%;
         display: flex;
         flex-direction: column;
@@ -54,16 +64,18 @@
         border: none;
         
     }
-    input:focus ,textarea:focus{
-        // box-shadow: 0 0 10px 1px $secondary-color inset;
-
-    }
     input[type='submit']{
         width: 30%;
         margin: 0 auto;
         display: block;
         color: $primary;
         background-color: $dark;
+
+        @media screen and (max-width: 768px) {
+           margin-bottom: 3rem;
+        }
+
+
     }
 
     input{
@@ -72,5 +84,8 @@
     textarea{
         padding: 3rem 0;
         max-width: 50vw;
+        @media screen and (max-width: 768px) {
+            max-width: 100%;
+        }
     }
 }

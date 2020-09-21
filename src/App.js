@@ -8,6 +8,7 @@ import Menu from './components/Menu';
 import Contact from './components/Contact';
 import PreSkillsPage from './components/PreSkills';
 import PreProjectsPage from './components/PreProjects';
+import BottomMenu from './components/BottomMenu';
 
 
 function App() {
@@ -21,6 +22,7 @@ function App() {
     <PreProjectsPage/>
     <ProjectsPage/>
     <Contact/>
+    <BottomMenu/>
     <Footer/>
     </>
   );
