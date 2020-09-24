@@ -76,22 +76,42 @@
         margin: 1rem 0;
     }
     input, textarea{
-        // margin: 1rem 0;
         font-size: 1.25rem;
         font-weight: 600;
         background-color: $primary;
         border: none;
         
     }
-    input[type='submit']{
-        width: 30%;
-        margin: 2rem auto;
-        color: $primary;
-        background-color: $dark;
 
-        // @media screen and (max-width: 768px) {
-        //    margin-bottom: rem;
-        // }
+    .error{
+        border: .2rem solid $success-color;
+    }
+
+    .errorMsg {
+        color: $success-color;
+        font-weight: 500;
+        text-transform: uppercase;
+        margin-top: .5rem;
+    }
+    .success {
+        color: $success-color;
+        text-transform: uppercase;
+        font-weight: 500;
+        font-size: 1.2rem;
+        text-align: center;
+        margin: .2rem 0;
+        
+    }
+
+    button{
+        width: 30%;
+        margin: .5rem auto;
+        color: $primary;
+        font-weight: 600;
+        text-transform: uppercase;
+        border: none;
+        padding: 1rem;
+        background-color: $dark;
 
 
     }
