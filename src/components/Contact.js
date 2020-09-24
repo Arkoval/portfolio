@@ -97,9 +97,9 @@ function Contact(){
                 <h1>Contact</h1>
                 <div>Portfolio in English</div>
                 <div>Portfolio in Polish</div>
-                <div className='construction-warning'>Section under construction,
+                {/* <div className='construction-warning'>Section under construction,
                 <p>please contact me via email</p>
-                </div>
+                </div> */}
             </div>
             <form className='contact-form' onSubmit={submitHandler} ref={e => {right = e}} noValidate>
                 <label htmlFor='name'>Name:</label>
