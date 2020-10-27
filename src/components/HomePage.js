@@ -1,16 +1,16 @@
-import React, { useEffect, useRef, useState } from 'react';
+import React, { useEffect, useRef} from 'react';
+import {animationCursor, animationText} from '../utils/common-animation'
 
 function HomePage() {
     let text = useRef(null);
-    let [index, setIndex] = useState(0)
+    let cursor = useRef(null);
 
-    const texts = ["I'm a Front End Developer", "I'm a Graphic Designer"]
+    const words = ["Front End Developer", "Graphic Designer"]
 
-    // const interval = setInterval(()=> {
-    //        index == 0 ? setIndex(index++) : setIndex(index--)
-    //      }, 3000)
 
     useEffect(() => {
+        animationCursor(cursor);
+        animationText(text, words)
         
     })
 
@@ -18,7 +18,7 @@ function HomePage() {
         <div className='homePage' id='home'>
             <div className='homePage-content'>
                 <h1>Hello, my name is Arek and</h1>
-                <h2 ref={e => {text = e}}>{texts[index]}</h2>
+    <h2>I'm a <span ref={e => {text = e}}></span><span ref={e => {cursor = e}} className='cursor'>_</span></h2>
             </div>
         </div>
     )

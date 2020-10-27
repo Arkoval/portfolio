@@ -1,4 +1,5 @@
 import React from 'react'
+import { animationScroll } from '../utils/common-animation';
 
 function Menu() {
 
@@ -7,18 +8,18 @@ function Menu() {
       }
     const goToHandler = e => {
         closeMenu()
-        console.log(e.target.href)
+        animationScroll(e.target.name)
     }
 
     return(
         <div className='menu'>
-            <a onClick={closeMenu} className='closeMenu'>&#10094;</a>
+            <button onClick={closeMenu} className='closeMenu'>&#10094;</button>
             <div className="menu-content">
                 <ul onClick={goToHandler}>
-                    <li ><a href="#home">Home</a></li>
-                    <li><a href="#skills">Skills</a></li>
-                    <li><a href="#projects">Projects</a></li>
-                    <li><a href="#contact">Contact</a></li>
+                    <li ><button name="home" >Home</button></li>
+                    <li><button name="skills" >Skills</button></li>
+                    <li><button name="projects" >Projects</button></li>
+                    <li><button name="contact">Contact</button></li>
                 </ul>
             </div>
         </div>
