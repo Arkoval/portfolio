@@ -95,11 +95,10 @@ function Contact(){
     return <div className='contact' id='contact' ref={e => {container = e}}>
             <div className='contact-left'ref={e => {left = e}}>
                 <h1>Contact</h1>
-                <div>Portfolio in English</div>
-                <div>Portfolio in Polish</div>
-                {/* <div className='construction-warning'>Section under construction,
-                <p>please contact me via email</p>
-                </div> */}
+                <div className="cv-container">
+                    <a href="https://drive.google.com/file/d/1CXUv7ZxWr45GvpEIO59DEtX2XU-a3ORG/view?usp=sharing">Curriculum Vitae PL</a>
+                    <a href="https://drive.google.com/file/d/178_ZQrmsK67ioy9_Dp41QFdGBNlDLzMi/view?usp=sharing">Curriculum Vitae ENG</a>
+                </div>
             </div>
             <form className='contact-form' onSubmit={submitHandler} ref={e => {right = e}} noValidate>
                 <label htmlFor='name'>Name:</label>

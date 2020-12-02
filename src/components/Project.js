@@ -21,7 +21,7 @@ function Project({ data, active, isMobile }) {
             </div>
             <div className="project-image">
               <img
-                src={require("../utils/dummy-photo.jpg")}
+                src={require(`../images/${project.img}.jpg`)}
                 alt={project.name + " photo"}
               />
             </div>
@@ -42,7 +42,7 @@ function Project({ data, active, isMobile }) {
             </div>
             <div className="project-image">
               <img
-                src={require("../utils/dummy-photo.jpg")}
+                src={require(`../images/${project.img}.jpg`)}
                 alt={project.name + " photo"}
               />
             </div>
@@ -54,35 +54,3 @@ function Project({ data, active, isMobile }) {
 }
 
 export default Project;
-
-// import React from 'react';
-
-// function Project({data, active}){
-
-//     return (
-//         <>
-//             {data.map((project, i) => {
-//                 return (
-//                     <div key={i} className={`project-slide ${active === i ? 'active' : 'inactive'}`}
-//                     style={{transform: `translateX(${-active*100}%)`}}>
-//                     <div className='project-details'>
-//                         <h2>{project.name}</h2>
-//                         <p>{project.description}</p>
-//                         <div className='project-links'>
-//                         <a href={project.live}>LIVE</a>
-//                         <a href={project.code}>CODE</a>
-//                         </div>
-//                     </div>
-//                     <div className='project-image'>
-//                         <img src={require('../utils/dummy-photo.jpg')} alt={project.name + ' photo'}/>
-//                     </div>
-
-//                 </div>
-//                 )
-//             }
-//                 )}
-//         </>
-//     )
-// }
-
-// export default Project;

@@ -1,7 +1,7 @@
 .contact{
     min-height: 100vh;
     display: flex;
-    background: url('../utils/enso-footer.svg') no-repeat right;
+    background: url('../images/enso-footer.svg') no-repeat right;
     justify-content: space-between;
     align-items: center;
 
@@ -42,6 +42,20 @@
             margin: 3rem 1rem;
             font-size: 2rem;
             font-weight: 600;
+        }
+        .cv-container{
+            
+            a{
+                display: block;
+                margin: 1rem 0;
+                text-decoration: none;
+                color: $dark;
+                font-weight: 600;
+
+                &:hover{
+                    color: $primary-color;
+                }
+            }
         }
         .construction-warning{
             text-align: center;
